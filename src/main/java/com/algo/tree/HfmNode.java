@@ -1,16 +1,36 @@
 package com.algo.tree;
 
-public class HfmNode implements Comparable<HfmNode>{		//优先队列,小的我把你优先级调高
-	
-	String chars;		//节点里面的字符
-	int fre;		//表示是频率
+/**
+ *
+ * @author dai
+ */
+public class HfmNode implements Comparable<HfmNode>{
+
+	/**
+	 * 节点里面的字符
+	 */
+	String chars;
+	/**
+	 * 表示是频率
+	 */
+	int weight;
+	/**
+	 * 左节点
+	 */
 	HfmNode left;
+	/**
+	 * 右节点
+	 */
 	HfmNode right;
-	HfmNode parent;	//用来找上层的
+	/**
+	 * 用来找上层的
+	 */
+	HfmNode parent;
 	
 	@Override
 	public int compareTo(HfmNode o) {
-		return this.fre - o.fre;
+		// 优先队列,小的优先级调高
+		return this.weight - o.weight;
 	}
 	
 }
