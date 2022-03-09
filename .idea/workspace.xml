@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb947bab-989a-4841-b2ea-d9d6ef1f3143" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/algo/tree/HfmNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/algo/tree/HfmNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/algo/tree/HuffmenTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/algo/tree/HuffmanTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/algo/tree/HuffmanTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/algo/tree/HuffmanTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +103,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1646625711601</updated>
-      <workItem from="1646625719651" duration="9858000" />
+      <workItem from="1646625719651" duration="13380000" />
     </task>
     <servers />
   </component>

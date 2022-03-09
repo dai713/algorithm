@@ -68,7 +68,7 @@ public class HuffmanTree {
 
 	public void creatTree() {
 		// 拿出所有的点
-		Character keys[] = weights.keySet().toArray(new Character[0]);
+		Character[] keys = weights.keySet().toArray(new Character[0]);
 		// jdk底层的优先队列
 		PriorityQueue<HfmNode> priorityQueue = new PriorityQueue<>();
 		for (Character c : keys) {
@@ -76,16 +76,19 @@ public class HuffmanTree {
 			hfmNode.chars = c.toString();
 			// 权重
 			hfmNode.weight = weights.get(c);
+
 			// 首先把我们的优先队列初始化进去
 			priorityQueue.add(hfmNode);
+			// 存入叶子节点
 			leafs.add(hfmNode);
 		}
 
-		int len = priorityQueue.size();
 		// 每次找最小的两个点合并
+		int len = priorityQueue.size();
 		for (int i = 1; i <= len - 1; i++) {
+			// 取出队列第一个元素
 			HfmNode n1 = priorityQueue.poll();
-			// 每次取优先队列的前面两个 就一定是两个最小的
+			// 取出队列第二个元素
 			HfmNode n2 = priorityQueue.poll();
 
 			HfmNode newNode = new HfmNode();
@@ -102,6 +105,7 @@ public class HuffmanTree {
 
 			priorityQueue.add(newNode);
 		}
+
 		// 最后这个点就是我们的根节点
 		root = priorityQueue.poll();
 		System.out.println("构建完成");
