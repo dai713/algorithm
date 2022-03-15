@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb947bab-989a-4841-b2ea-d9d6ef1f3143" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/algo/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/algo/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/algo/tree/HuffmanTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/algo/tree/HuffmanTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +25,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -50,7 +59,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/algo/tree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HuffmanTree">
+  <component name="RunManager" selected="Application.test">
     <configuration name="HuffmanTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.algo.tree.HuffmanTree" />
       <module name="algorithm" />
@@ -90,8 +99,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HuffmanTree" />
         <item itemvalue="Application.test" />
+        <item itemvalue="Application.HuffmanTree" />
       </list>
     </recent_temporary>
   </component>
@@ -103,7 +112,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1646625711601</updated>
-      <workItem from="1646625719651" duration="13380000" />
+      <workItem from="1646625719651" duration="28176000" />
+      <workItem from="1646968031735" duration="2176000" />
+      <workItem from="1647220501937" duration="3373000" />
     </task>
     <servers />
   </component>

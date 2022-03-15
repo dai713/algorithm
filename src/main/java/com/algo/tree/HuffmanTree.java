@@ -41,7 +41,7 @@ public class HuffmanTree {
 	 */
 	public Map<Character, String> code() {
 
-		Map<Character, String> map = new HashMap<Character, String>();
+		Map<Character, String> map = new HashMap<>();
 		for (HfmNode node : leafs) {
 			String code = "";
 			/**
