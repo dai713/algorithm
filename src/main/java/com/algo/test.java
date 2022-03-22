@@ -15,10 +15,11 @@ public class test {
 //        insertSort(arr);
         System.out.println(Arrays.toString(arr));
 
+
     }
 
     public static void insertSort(int[] arr) {
-        for (int n = arr.length / 2; n >= 1; n /= 2) {
+        for (int n = arr.length /2; n >= 1; n /= 2) {
             for (int i = n; i < arr.length; i++) {
                 int j = i - n;
                 int temp = arr[i];
@@ -55,25 +56,25 @@ public class test {
             }
             if (ll < rr) {
                 int temp = arr[rr];
-                arr[rr] = arr[ll];
+                arr[rr] =arr[ll];
                 arr[ll] = temp;
                 rr--;
             }
-
         }
 
         if (left < ll) {
-            mergeSort(arr, left, ll -1);
+            mergeSort(arr, left, ll-1);
         }
         if (rr < right) {
-            mergeSort(arr, ll + 1, right);
+            mergeSort(arr, ll +1, right);
         }
     }
 
     public static void merge(int[] arr, int left, int right, int avg) {
         int[] temp = new int[arr.length];
+
         int point1 = left;
-        int point2 = avg+1;
+        int point2 = avg +1;
         int location = left;
 
         while (point1 <= avg && point2 <= right) {
@@ -87,8 +88,7 @@ public class test {
         while (point1 <= avg) {
             temp[location++] = arr[point1++];
         }
-
-        while (point2 <= right){
+        while (point2 <= right) {
             temp[location++] = arr[point2++];
         }
 
