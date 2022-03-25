@@ -11,26 +11,26 @@ public class test {
 
     public static void main(String[] args) throws InterruptedException {
         int[] arr = {9,5,6,8,0,3,7,1};
-//        mergeSort(arr, 0, arr.length - 1);
-        insertSort(arr);
+        mergeSort(arr, 0, arr.length - 1);
+//        insertSort(arr);
         System.out.println(Arrays.toString(arr));
-
-        new ThreadLocal();
 
     }
 
     public static void insertSort(int[] arr) {
-        for (int i =0; i < arr.length - 1; i++) {
-            boolean flag = false;
-            for (int j = 0; j < arr.length - 1 -i; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    int temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;
-                    flag = true;
+        for (int n = arr.length / 2; n >= 1; n /= 2) {
+            for (int i = n; i < arr.length; i++) {
+                int temp = arr[i];
+                int j = i - n;
+                for (; j >= 0; j-=n) {
+                    if (arr[j] > temp) {
+                        arr[j + n] = arr[j];
+                    } else {
+                        break;
+                    }
                 }
+                arr[j + n] = temp;
             }
-            if (!flag) break;
         }
     }
 
@@ -39,11 +39,11 @@ public class test {
 
         int ll = left;
         int rr = right;
-
         while (ll < rr) {
             while (ll < rr && arr[rr] > base) {
                 rr--;
             }
+
             if (ll < rr) {
                 int temp = arr[rr];
                 arr[rr] = arr[ll];
@@ -52,21 +52,22 @@ public class test {
             }
 
             while (ll < rr && arr[ll] < base) {
-                ll ++;
+                ll++;
             }
+
             if (ll < rr) {
                 int temp = arr[rr];
-                arr[rr]= arr[ll];
+                arr[rr] = arr[ll];
                 arr[ll] = temp;
                 rr--;
             }
         }
 
         if (left < ll) {
-            mergeSort(arr, left, ll - 1);
+            mergeSort(arr, left, ll -1);
         }
 
-        if ( rr < right) {
+        if (rr < right) {
             mergeSort(arr, ll +1, right);
         }
     }
@@ -75,7 +76,7 @@ public class test {
         int[] temp = new int[arr.length];
 
         int point1 = left;
-        int point2 = avg + 1;
+        int point2 = avg +1;
         int location = left;
 
         while (point1 <= avg && point2 <= right) {
@@ -86,7 +87,7 @@ public class test {
             }
         }
 
-        while(point1 <= avg) {
+        while (point1 <= avg) {
             temp[location++] = arr[point1++];
         }
 
