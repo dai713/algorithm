@@ -58,7 +58,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/algo/tree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Similarity">
+  <component name="RunManager" selected="Application.test">
     <configuration name="FindDisappearedNum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.algo.FindDisappearedNum" />
       <module name="algorithm" />
@@ -126,8 +126,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Similarity" />
         <item itemvalue="Application.test" />
+        <item itemvalue="Application.Similarity" />
         <item itemvalue="Application.FindDisappearedNum" />
         <item itemvalue="Application.HuffmanTree" />
       </list>
@@ -144,7 +144,7 @@
       <workItem from="1646625719651" duration="28176000" />
       <workItem from="1646968031735" duration="2176000" />
       <workItem from="1647220501937" duration="18345000" />
-      <workItem from="1647824116107" duration="3315000" />
+      <workItem from="1647824116107" duration="16346000" />
     </task>
     <servers />
   </component>
