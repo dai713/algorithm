@@ -1,4 +1,4 @@
-package com.algo.other.queue;
+package com.algo.dataConstruction.queue;
 
 /**
  * 数组实现「双向」队列

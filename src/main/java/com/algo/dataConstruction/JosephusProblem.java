@@ -1,4 +1,4 @@
-package com.algo.other;
+package com.algo.dataConstruction;
 
 import com.algo.module.Node;
 

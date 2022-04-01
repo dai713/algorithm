@@ -1,4 +1,4 @@
-package com.algo.other;
+package com.algo.dataConstruction;
 
 /**
  * 斐波那契 fn = f(n-1) + f(n-2)
