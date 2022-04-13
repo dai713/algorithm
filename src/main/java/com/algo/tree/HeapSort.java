@@ -16,6 +16,22 @@ public class HeapSort {
 
     }
 
+    public static void heapSort(int[] data) {
+        int len = data.length;
+        // 0(nlogn)
+        for (int i = len / 2 - 1; i >= 0; i--) {
+            maxHeap(data, i, len);
+        }
+
+        // 0(nlogn)
+        for (int i = len -1; i > 0; i--) {
+            int temp = data[0];
+            data[0] = data[i];
+            data[i] = temp;
+            maxHeap(data, 0, i);
+        }
+    }
+
     public static void maxHeap(int[] data, int start, int end) {
         int parent = start;
         // 下标是从0开始就要 + 1，从 1 就不用（+1）
@@ -43,19 +59,5 @@ public class HeapSort {
         }
     }
 
-    public static void heapSort(int[] data) {
-        int len = data.length;
-        // 0(nlogn)
-        for (int i = len / 2 - 1; i >= 0; i--) {
-            maxHeap(data, i, len);
-        }
 
-        // 0(nlogn)
-        for (int i = len -1; i > 0; i--) {
-            int temp = data[0];
-            data[0] = data[i];
-            data[i] = temp;
-            maxHeap(data, 0, i);
-        }
-    }
 }
