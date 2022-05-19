@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * 【概率抽奖】 实现
  */
-public class random {
+public class random { 
 
    public static Map<String, Object> giftMap = new HashMap<>();
 
