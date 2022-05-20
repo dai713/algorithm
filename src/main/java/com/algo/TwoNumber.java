@@ -20,10 +20,10 @@ public class TwoNumber {
         Map<Integer, Integer> map = new HashMap<>(nums.length);
         for (int i = 0; i < nums.length; i++) {
             num = target - nums[i];
-            map.put(nums[i], i);
+            map.put(nums[i], nums[i]);
             if (map.containsKey(num)) {
                 result[0] = map.get(num);
-                result[1] = i;
+                result[1] = nums[i];
                 return result;
             }
 
